@@ -1,0 +1,12 @@
+query users($userId: String) {
+    users (
+        userId: $userId
+    ) {
+        __typename
+        data
+        meta {
+            hint
+            responseStatus
+        }
+    }
+}

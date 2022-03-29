@@ -1,0 +1,12 @@
+query groups($userId: String) {
+    groups (
+        userId: $userId
+    ) {
+        __typename
+        data
+        meta {
+            hint
+            responseStatus
+        }
+    }
+}
